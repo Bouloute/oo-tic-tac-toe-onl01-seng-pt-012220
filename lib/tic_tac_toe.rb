@@ -4,11 +4,13 @@ class TicTacToe
 
   def initialize
     @board = Array.new(9, " ")
+    @board_size = 9
   end
 
   def display_board
     counter = 0
-    while counter <= 6
+    square = Integer.sqrt(@board_size)
+    while counter <= 8
       puts " #{@board[counter]} | #{@board[counter + 1]} | #{@board[counter + 2]} "
       counter < 6 ? (puts "-----------") : ()
 
