@@ -10,7 +10,7 @@ class TicTacToe
   def display_board
     counter = 0
     square = Integer.sqrt(@board_size)
-    while counter <= @board_size
+    while counter <= @board_size - 1
       puts " #{@board[counter]} | #{@board[counter + 1]} | #{@board[counter + 2]} "
       counter < 6 ? (puts "-----------") : ()
 
