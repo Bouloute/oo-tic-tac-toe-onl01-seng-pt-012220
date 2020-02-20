@@ -100,3 +100,6 @@ class TicTacToe
     end
   end
 end
+
+board = TicTacToe.new()
+board.display_board
